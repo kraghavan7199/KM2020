@@ -1,4 +1,4 @@
 
-sur :       I will start with ui
 
-vi(Leader) :       yesah start
+kraghavan :     Can anyone start with the CD Project ?
+kjoshi(Leader) :       Yep we need to get started quickly. The submission date is coming soon.

@@ -2,12 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>Portal</title>
-	<link href='http://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
 <?php
@@ -47,15 +44,15 @@ if ($_FILES["info"]["error"] > 0)
     {
 		if (file_exists("../". "info".$row["id"].".txt"))
 		{
-			echo "<div id=\"already\">";
+			echo "<div class=\"jumbotron text-center\">";
 		  	echo $_FILES["info"]["name"] . " already exists. ";
-		  	echo "<div>";
+		  	echo "</div>";
 		}
 		else
 		{
 		  move_uploaded_file($_FILES["info"]["tmp_name"],
 		  "../"."info".$row["id"].".txt");
-			echo "<div id=\"already\">Project Successfully Uploaded !</div>";
+			echo "<div class=\"jumbotron text-center\">Project Successfully Uploaded !";
 		}
     }
     if($status == "1")
@@ -78,7 +75,7 @@ if ($_FILES["info"]["error"] > 0)
 			}
 	    }
 	}
-	echo "<a href=\"project.php\" id=\"back_home\">Go Back</a>"
+	echo "<a href=\"project.php\" id=\"back_home\">Go Back</a></div>"
 ?>
 </body>
 </html>

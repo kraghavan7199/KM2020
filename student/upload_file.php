@@ -47,15 +47,15 @@ if ($_FILES["info"]["error"] > 0)
     {
 		if (file_exists("../". "info".$row["id"].".txt"))
 		{
-			echo "<div id=\"already\">";
+			echo "<div class=\"jumbotron text-center\">";
 		  	echo $_FILES["info"]["name"] . " already exists. ";
-		  	echo "<div>";
+		  	echo "</div>";
 		}
 		else
 		{
 		  move_uploaded_file($_FILES["info"]["tmp_name"],
 		  "../"."info".$row["id"].".txt");
-			echo "<div id=\"already\">Project Successfully Uploaded !</div>";
+			echo "<div class=\"jumbotron text-center\">Project Successfully Uploaded !";
 		}
     }
     if($status == "1")
@@ -78,7 +78,7 @@ if ($_FILES["info"]["error"] > 0)
 			}
 	    }
 	}
-	echo "<a href=\"student_projects.php\" id=\"back_home\">Go Back</a>"
+	echo "<a href=\"student_projects.php\" id=\"back_home\">Go Back</a></div>"
 ?>
 </body>
 </html>
