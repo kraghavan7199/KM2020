@@ -18,4 +18,3 @@ A Project Management Website which helps the users to upload, download projects 
 
 Sign Up/Registrarion,Upload Projects, Download Projects, Review Projects, User Requests, etc
 
-### Screenshots
