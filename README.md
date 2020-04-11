@@ -7,8 +7,8 @@ Knowledge Management - UE17CS342
   * Kethan MV - PES1201701085
   * Kaustubh R - PES1201700916
   * Suraj MM  - PES1201701551
-  *
-  *
+  * K Suhas - PES1201700816
+  * Vihan Murthy - PES1201701603
 
 ### Overview
 
