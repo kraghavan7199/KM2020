@@ -5,9 +5,7 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
-
 <body>
-
 <?php
 $usn = $_POST['usn'];
 $name = $_POST['name'];
@@ -43,7 +41,7 @@ if(mysqli_num_rows($result) == 1)
   	echo 	"<div class=\"jumbotron text-center\">";
   	echo "<h1>User ".$usn." already exists</h1>";
   	echo "<p><a href=\"home.php\" id=\"back\">Go back</a><p>";
-    echo "</div>"
+    echo "</div>";
 }
 else
 {
@@ -59,7 +57,7 @@ else
   echo 	"<div class=\"jumbotron text-center\">";
 	echo "<h1>Your account has been created<br>Username : ".$usn."</h1><br>";
 	echo "<p><a href=\"home.php\" id=\"login_link\">Login here</a></p>";
-  echo "</div>"
+  echo "</div>";
 }
 
 mysqli_close($con);
